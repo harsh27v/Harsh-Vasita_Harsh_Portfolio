@@ -120,6 +120,24 @@
   color: $color-frozen-blue;
 }
 
+@media screen and (min-width: 768px) {
+  .header-inner {
+    min-height: 88px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .desktop-nav,.header-inner>.contact-link {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-inner {
     position: relative;

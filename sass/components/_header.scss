@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+.site-header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $color-black-iris;
+  border-bottom: 1px solid rgba(160, 189, 219, 0.2);
+  backdrop-filter: blur(14px);
+}
+
+.header-inner {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  min-height: 82px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 145px;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

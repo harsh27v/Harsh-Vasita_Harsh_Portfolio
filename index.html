@@ -9,6 +9,32 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="#home" aria-label="Harsh Vasita home">
+                <img src="images/logo.png" alt="Harsh Vasita">
+            </a>
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
+            </nav>
+            <a class="contact-link" href="#contact">Contact <span>↗</span></a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+            <a href="#home">Home <span>01</span></a>
+            <a href="#projects">Projects <span>02</span></a>
+            <a href="#skills">Skills <span>03</span></a>
+            <a href="#about">About <span>04</span></a>
+            <a class="contact-link" href="#contact">Contact <span>↗</span></a>
+        </nav>
+    </header>
     <main>
         <section class="hero full-width-grid-con">
             <h1 class="hidden">Hero Section</h1>

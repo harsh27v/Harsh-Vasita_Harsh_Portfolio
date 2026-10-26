@@ -10,6 +10,30 @@
   height: 300px;
 }
 
+.welcome-section {
+    padding: 10px 0;
+}
+
+.welcome-video {
+    width: 100%;
+}
+
+.welcome-content .box {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+// video
+.welcome-video .plyr {
+    --plyr-color-main: #e2231a;
+    --plyr-video-control-color: #ffffff;
+    --plyr-control-radius: 4px;
+}
+
 @media screen and (min-width: 768px) {
     .hero .box {
         height: 400px;

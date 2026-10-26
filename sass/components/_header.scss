@@ -119,3 +119,77 @@
 .mobile-nav .contact-link {
   color: $color-frozen-blue;
 }
+
+@media screen and (min-width: 1200px) {
+  .header-inner {
+    position: relative;
+    min-height: 88px;
+  }
+
+  .desktop-nav {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    transform: translateX(-50%);
+  }
+
+  .desktop-nav a {
+    position: relative;
+    padding: 10px 0;
+    color: $color-white;
+    font-family: $font-body;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .desktop-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 1px;
+    background-color: $color-frozen-blue;
+    transition: 0.3s ease;
+  }
+
+  .desktop-nav a:hover {
+    color: $color-frozen-blue;
+  }
+
+  .desktop-nav a:hover::after {
+    width: 100%;
+  }
+
+  .header-inner > .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    color: $color-frozen-blue;
+    font-family: $font-body;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .header-inner > .contact-link:hover {
+    color: $color-white;
+  }
+
+  .header-inner > .contact-link span {
+    transition: 0.3s ease;
+  }
+
+  .header-inner > .contact-link:hover span {
+    transform: translate(3px, -3px);
+  }
+
+  .menu-toggle,
+  .mobile-nav {
+    display: none;
+  }
+}

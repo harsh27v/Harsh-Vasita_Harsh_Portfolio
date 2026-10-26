@@ -164,7 +164,7 @@
     width: 100%;
   }
 
-  .header-inner > .contact-link {
+  .header-inner>.contact-link {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -176,20 +176,19 @@
     transition: 0.3s ease;
   }
 
-  .header-inner > .contact-link:hover {
+  .header-inner>.contact-link:hover {
     color: $color-white;
   }
 
-  .header-inner > .contact-link span {
+  .header-inner>.contact-link span {
     transition: 0.3s ease;
   }
 
-  .header-inner > .contact-link:hover span {
+  .header-inner>.contact-link:hover span {
     transform: translate(3px, -3px);
   }
 
-  .menu-toggle,
-  .mobile-nav {
+  .menu-toggle,.mobile-nav {
     display: none;
   }
 }

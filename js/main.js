@@ -17,6 +17,31 @@ function toggleMenu() {
     }
 }
 
+const player1 = new Plyr("#player1", {
+    controls: [
+        "play-large",
+        "restart",
+        "rewind",
+        "play",
+        "fast-forward",
+        "progress",
+        "current-time",
+        "duration",
+        "mute",
+        "volume",
+        "settings",
+        "pip",
+        "fullscreen"
+    ],
+
+    settings: [
+        "captions",
+        "quality",
+        "speed",
+        "loop"
+    ]
+});
+
 function closeMenu() {
     mobileNav.classList.remove("is-open");
     hamburgerMenu.classList.remove("is-open");

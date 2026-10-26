@@ -38,10 +38,26 @@
     .hero .box {
         height: 400px;
     }
+    
+    .welcome-section {
+        padding: 20px 0;
+    }
+    
+    .welcome-content .box {
+        min-height: 250px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .hero .box {
         height: 500px;
+    }
+    
+    .welcome-section {
+        padding: 30px 0;
+    }
+
+    .welcome-content .box {
+        min-height: 350px;
     }
 }
